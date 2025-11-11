@@ -93,9 +93,9 @@ function countItems(items) {
 function getTotalPrice(items) {
   const totalPriceOfItems = items.reduce((totalPrice, currentItem) => {
     const costAllCurrentItems = currentItem.price * currentItem.quantity * 100;
-    totalPrice += costAllCurrentItems;
+    return totalPrice += costAllCurrentItems;
   }, 0)
-  console.log(`TEST TOTAL`, totalPriceOfItems / 100);
+  return totalPriceOfItems / 100;
 }
 
 // === READ BUT DO NOT CHANGE THE CODE BELOW ===
