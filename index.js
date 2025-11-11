@@ -72,7 +72,7 @@ function getItemPriceByName(items, name) {
  */
 function getItemsByCategory(items, category) {
   const itemsInCatergory = items.filter((item) => item.category === category)
-  
+  return itemsInCatergory;
 }
 
 /**
