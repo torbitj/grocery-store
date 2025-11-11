@@ -36,7 +36,10 @@ function logNames(items) {
  * @returns {string[]} an array of item names in all uppercase
  */
 function getUppercaseNames(items) {
-  // TODO: use `map`
+  const uppercaseArray = items.map((item) => {
+    return item.name.toUpperCase();
+  })
+  return uppercaseArray;
 }
 
 /**
