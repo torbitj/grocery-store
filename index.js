@@ -71,7 +71,8 @@ function getItemPriceByName(items, name) {
  * @returns {Item[]} array of items that belong to the given `category`
  */
 function getItemsByCategory(items, category) {
-  // TODO: use `filter`
+  const itemsInCatergory = items.filter((item) => item.category === category)
+  
 }
 
 /**
