@@ -91,7 +91,11 @@ function countItems(items) {
  * @returns {number} the cost of all given items
  */
 function getTotalPrice(items) {
-  // TODO: use `reduce`
+  const totalPriceOfItems = items.reduce((totalPrice, currentItem) => {
+    const costAllCurrentItems = currentItem.price * currentItem.quantity * 100;
+    totalPrice += costAllCurrentItems;
+  }, 0)
+  console.log(`TEST TOTAL`, totalPriceOfItems / 100);
 }
 
 // === READ BUT DO NOT CHANGE THE CODE BELOW ===
