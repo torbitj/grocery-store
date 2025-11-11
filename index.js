@@ -83,7 +83,7 @@ function countItems(items) {
   const totalItemCount = items.reduce((totalCount, item) => {
     return totalCount + item.quantity;
   }, 0)
-  console.log(`TEST TOTAL`, totalItemCount);
+  return totalItemCount;
 }
 
 /**
